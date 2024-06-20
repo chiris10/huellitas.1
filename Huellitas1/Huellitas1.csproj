@@ -45,7 +45,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data">
-      <HintPath>..\..\MySql.Data.DLL</HintPath>
+      <HintPath>..\..\..\MySql.Data.DLL</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -1806,8 +1806,10 @@
     <Content Include="fonts\flaticon\font\flaticon.css" />
     <Content Include="fonts\flaticon\font\flaticon.html" />
     <Content Include="fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="imagen1\estados-unidos.png" />
     <Content Include="imagen1\jordi.jpg" />
     <Content Include="imagen1\lindo.jpg" />
+    <Content Include="imagen1\mundo.png" />
     <Content Include="imagen1\perro1.jpg" />
     <Content Include="imagen1\perro2.jpg" />
     <Content Include="imagen1\perro3.jpg" />
