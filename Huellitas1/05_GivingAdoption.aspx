@@ -87,138 +87,38 @@
         </div>
       </div>
     </section>
+           <form id="form1" runat="server">
+        <h1>Registro de Animales</h1>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><asp:TextBox ID="txtNombre" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>Edad:</td>
+                <td><asp:TextBox ID="txtEdad" runat="server" Width="50px"></asp:TextBox> años</td>
+            </tr>
+            <tr>
+                <td>Peso:</td>
+                <td><asp:TextBox ID="txtPeso" runat="server" Width="50px"></asp:TextBox> kg</td>
+            </tr>
+            <tr>
+                <td>Foto:</td>
+                <td><asp:FileUpload ID="fuFoto" runat="server"></asp:FileUpload></td>
+            </tr>
+            <tr>
+                <td>Comentario:</td>
+                <td><asp:TextBox ID="txtComentario" runat="server" TextMode="MultiLine" Width="200px" Height="100px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
+                </td>
+            </tr>
+        </table>
+    </form>
 
-    <section class="ftco-section bg-light">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen/about-1.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3>Tini </h3>
-							<span class="position mb-2"></span>
-							<div class="faded">
-								<p></p>
-								<ul class="ftco-social text-center">
-	              
-	              </ul>
-              </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen/image_3.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3> Luz </h3>
-							<span class="position mb-2"></span>
-							<div class="faded">
-								<p></p>
-							
-              </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen1/perro5.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3> Smith</h3>
-							<span class="position mb-2"> </span>
-							<div class="faded">
-								<p>.</p>
-								
-              </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen1/perro2.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3>Alicia </h3>
-							<span class="position mb-2"></span>
-							<div class="faded">
-								<p></p>
-							
-              </div>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen1/perro1.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3>river</h3>
-							<span class="position mb-2"> </span>
-							<div class="faded">
-								<p></p>
-							
-              </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen1/perro3.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3>Parker</h3>
-							<span class="position mb-2"></span>
-							<div class="faded">
-								<p></p>
-								
-              </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen1/perro4.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-
-							<h3> Copitos </h3>
-
-						
-							<span class="position mb-2"></span>
-							<div class="faded">
-								<p></p>
-								
-              </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(imagen1/perro7.jpg);"></div>
-						</div>
-						<div class="text pt-3 px-3 pb-4 text-center">
-							<h3>Fred </h3>
-							<span class="position mb-2"></span>
-							<div class="faded">
-								<p></p>
-							
-              </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 
      <footer class="footer">
