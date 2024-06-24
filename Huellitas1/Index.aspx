@@ -37,6 +37,12 @@
   <a href="08_Contact.aspx"><span class="fa fa-paper-plane mr-1"></span> huellitas.adopt@gmail.com</a>
 						</p>
 					</div>
+                    <div class="form-group">&nbsp;</div>
+               <div style=" position:absolute; left: 1200px; right; 1200px;">
+
+            <a href="01_Registro.aspx"> <img src="imagen1/mundo.png" /></a>
+      </div>
+
 
 				</div>
 			</div>
@@ -59,14 +65,7 @@
 	        </ul>
 
 
-                      <div class="form-group">
-                          <asp:DropDownList ID="Gender"
-                              AutoPostBack="True"
-                              runat="server" OnSelectedIndexChanged="Gender_SelectedIndexChanged">
-   <asp:ListItem Selected="True" Value="Select Gender">  English </asp:ListItem>
-     <asp:ListItem Value="Masculino"> Spanish </asp:ListItem>
-    </asp:DropDownList>
-  </div>
+
               <div class="form-group">&nbsp;</div>
                <div>
                    <a href="01_Registro.aspx"> <img src="1/usuario3.png" /></a>
