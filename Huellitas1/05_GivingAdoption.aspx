@@ -27,7 +27,46 @@
   </head>
   <body>
 	   <form runat="server" >
+		<script type="text/javascript">
+            function validar(e) { // 1
+                tecla = (document.all) ? e.keyCode : e.which; // 2
+                if (tecla == 8) return true; // 3
+                patron = /[A-Za-z\s]/; // 4
+                te = String.fromCharCode(tecla); // 5
+                return patron.test(te); // 6
+            }
+</script>
+    <script type="text/javascript">
+        function numeros(nu) { // 1
+            tecla = (document.all) ? e.keyCode : e.which; // 2
+            if (tecla == 8) return true; // 3
+            ppatron = /\d/; // Solo acepta números// 4
+            te = String.fromCharCode(tecla); // 5
+            return patron.test(te); // 6
+        }
+    </script>
 
+    <script>
+        function NumCheck(e, field) {
+            key = e.keyCode ? e.keyCode : e.which
+            // backspace
+            if (key == 8) return true
+            // 0-9
+            if (key > 47 && key < 58) {
+                if (field.value == "") return true
+                regexp = /.[0-9]{2}$/
+                return !(regexp.test(field.value))
+            }
+            // .
+            if (key == 46) {
+                if (field.value == "") return false
+                regexp = /^[0-9]+$/
+                return regexp.test(field.value)
+            }
+            // other key
+            return false
+        }
+    </script>
     <div class="wrap">
 			<div class="container">
 				<div class="row">
@@ -87,36 +126,77 @@
         </div>
       </div>
     </section>
-           <form id="form1" runat="server">
-        <h1>Registro de Animales</h1>
-        <table>
-            <tr>
-                <td>Nombre:</td>
-                <td><asp:TextBox ID="txtNombre" runat="server"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td>Edad:</td>
-                <td><asp:TextBox ID="txtEdad" runat="server" Width="50px"></asp:TextBox> años</td>
-            </tr>
-            <tr>
-                <td>Peso:</td>
-                <td><asp:TextBox ID="txtPeso" runat="server" Width="50px"></asp:TextBox> kg</td>
-            </tr>
-            <tr>
-                <td>Foto:</td>
-                <td><asp:FileUpload ID="fuFoto" runat="server"></asp:FileUpload></td>
-            </tr>
-            <tr>
-                <td>Comentario:</td>
-                <td><asp:TextBox ID="txtComentario" runat="server" TextMode="MultiLine" Width="200px" Height="100px"></asp:TextBox></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <asp:Button ID="btnRegistrar" runat="server" Text="Registrar" OnClick="btnRegistrar_Click" />
-                </td>
-            </tr>
-        </table>
-    </form>
+           <section>
+  
+        
+                 
+     	<title>Registro de Animales</title>
+	<style>
+		/* Estilos para la plantilla */
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.form-container {
+			width: 50%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.form-input {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		.form-input[type="file"] {
+			padding: 10px 0;
+		}
+		.form-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.form-button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="form-container">
+		<h2>Registro de Animales</h2>
+		<form>
+			<div class="form-label">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" class="form-input" onkeypress="return validar(event)"/>
+			</div>
+			<div class="form-label">
+				<label for="edad">Edad:</label>
+				<input type="number" id="edad" class="form-input" onkeypress="return NumCheck(event, this)"/>
+			</div>
+			<div class="form-label">
+				<label for="peso">Peso (kg):</label>
+				<input type="number" id="peso" class="form-input" onpaste="return false" onkeypress="return NumCheck(event, this)"/>
+			</div>
+			<div class="form-label">
+				<label for="foto">Foto:</label>
+				<input type="file" id="foto" class="form-input" />
+			</div>
+			<div class="form-label">
+				<label for="comentario">Comentario:</label>
+				<textarea id="comentario" class="form-input" /></textarea>
+			</div>
+			<button class="form-button" type="submit">Registrar</button>
+		</form>
+	</div>
 
 
 	</section>
