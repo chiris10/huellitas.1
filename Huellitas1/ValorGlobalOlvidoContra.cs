@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Huellitas1
 {
-    public class ValorGLobaL0LovidoContra
+    public class ValorGlobalOlvidoContra
     {
         private static string  _ValorGlobal= string .Empty;
         public static string valorglobal
