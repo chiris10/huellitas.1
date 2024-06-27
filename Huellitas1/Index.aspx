@@ -69,16 +69,6 @@
                         <li class="nav-item"><a href="08_Contact.aspx" class="nav-link">Contact</a></li>
 
                     </ul>
-
-
-                    <div class="form-group">
-                        <asp:DropDownList ID="Gender"
-                            AutoPostBack="True"
-                            runat="server" OnSelectedIndexChanged="Gender_SelectedIndexChanged">
-                            <asp:ListItem Selected="True" Value="Select Gender">  English </asp:ListItem>
-                            <asp:ListItem Value="Masculino"> Spanish </asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
                     <div class="form-group">&nbsp;</div>
                     <div>
                         <ul class="navbar-nav align-items-center d-none d-md-flex">
