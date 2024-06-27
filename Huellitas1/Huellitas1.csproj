@@ -1878,6 +1878,7 @@
     <Content Include="js\popper.min 1.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\scrollax.min.js" />
+    <Content Include="SuperAdmin.aspx" />
     <Content Include="SweetAlert\sweetalert2.all.min.js" />
     <Content Include="SweetAlert\sweetalert2.js" />
     <Content Include="Web.config" />
@@ -1965,6 +1966,13 @@
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.6.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuperAdmin.aspx.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin.aspx.designer.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ValorGLobaL0LovidoContra.cs" />
   </ItemGroup>
   <ItemGroup>
