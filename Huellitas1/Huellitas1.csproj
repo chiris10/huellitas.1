@@ -45,7 +45,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data">
-      <HintPath>..\..\..\MySql.Data.DLL</HintPath>
+      <HintPath>..\..\..\..\Downloads\MySql.Data.DLL</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -78,7 +78,9 @@
     <Content Include="06_Shop.aspx" />
     <Content Include="07_Team.aspx" />
     <Content Include="08_Contact.aspx" />
-    <Content Include="1admin.aspx" />
+    <Content Include="09_Carrito.aspx" />
+    <Content Include="10_Index_Ajustes.aspx" />
+    <Content Include="Admin_01.aspx" />
     <Content Include="1\pata.png" />
     <Content Include="1\pata1.png" />
     <Content Include="1\usuario.png" />
@@ -1878,6 +1880,7 @@
     <Content Include="js\popper.min 1.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\scrollax.min.js" />
+    <Content Include="SuperAdmin.aspx" />
     <Content Include="SweetAlert\sweetalert2.all.min.js" />
     <Content Include="SweetAlert\sweetalert2.js" />
     <Content Include="Web.config" />
@@ -1939,12 +1942,26 @@
     <Compile Include="08_Contact.aspx.designer.cs">
       <DependentUpon>08_Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="1admin.aspx.cs">
-      <DependentUpon>1admin.aspx</DependentUpon>
+    <Compile Include="09_Carrito.aspx.cs">
+      <DependentUpon>09_Carrito.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="1admin.aspx.designer.cs">
-      <DependentUpon>1admin.aspx</DependentUpon>
+    <Compile Include="09_Carrito.aspx.designer.cs">
+      <DependentUpon>09_Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10_Index_Ajustes.aspx.cs">
+      <DependentUpon>10_Index_Ajustes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10_Index_Ajustes.aspx.designer.cs">
+      <DependentUpon>10_Index_Ajustes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_01.aspx.cs">
+      <DependentUpon>Admin_01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_01.aspx.designer.cs">
+      <DependentUpon>Admin_01.aspx</DependentUpon>
     </Compile>
     <Compile Include="AgregarImagen.aspx.cs">
       <DependentUpon>AgregarImagen.aspx</DependentUpon>
@@ -1965,6 +1982,13 @@
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.6.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuperAdmin.aspx.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuperAdmin.aspx.designer.cs">
+      <DependentUpon>SuperAdmin.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\nucleo.eot" />

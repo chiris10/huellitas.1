@@ -12,10 +12,33 @@ namespace Huellitas1
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+
+
+                if (Session["usuario"] == null)
+                {
+                    Session.Abandon();
+                }
+           
+
+           
         }
         protected void Gender_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Loginbutton(object sender, EventArgs e)
+        {
+            Response.Redirect("02_Login.aspx");
+        }
+
+        protected void Logoutbutton(object sender, EventArgs e)
+        {
+            Session["usuario"] = null;
+            Session.Remove("usuario");
+            Response.Redirect("02_Login.aspx");
+            
         }
     }
 }

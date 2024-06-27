@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -49,7 +50,7 @@ namespace Huellitas1
         public static int AgregarUsuario(string nombre, string apellido, string usuario, string contra, string correo)
         {
             int retorno = 0;
-            MySqlCommand comando = new MySqlCommand(string.Format("Insert into usuarios (Nombre, Apellido, Nombre_Usuario, Password,Correo) values ('{0}','{1}','{2}','{3}','{4}')", nombre, apellido, usuario, contra, correo), datos.ObtenerConexion());
+            MySqlCommand comando = new MySqlCommand(string.Format("Insert into usuarios (Nombre, Apellido, Nombre_Usuario, Password,Correo, IdRol) values ('{0}','{1}','{2}','{3}','{4}','2')", nombre, apellido, usuario, contra, correo), datos.ObtenerConexion());
             retorno = comando.ExecuteNonQuery();
 
             return retorno;
@@ -104,5 +105,6 @@ namespace Huellitas1
             retorno[1] = indicators;
             return retorno;
         }
+        
     }
 }

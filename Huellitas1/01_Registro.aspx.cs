@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -35,7 +36,6 @@ namespace Huellitas1
                     usuario = txtusuario.Text;
                     encriptada = EncryptString(txtclave.Text, initVector);
                     correo = txtgmail.Text;
-
 
                     if (conexiones.UsuariosRepetidos(usuario, encriptada, nombre, apellido, correo) == 0)
                     {

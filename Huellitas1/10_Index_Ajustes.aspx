@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="1admin.aspx.cs" Inherits="Huellitas1._1admin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="10_Index_Ajustes.aspx.cs" Inherits="Huellitas1._10_Index_Ajustes" %>
 
 <!DOCTYPE html>
 <html lang="en">

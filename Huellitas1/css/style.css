@@ -8096,7 +8096,10 @@ h1, h2, h3, h4, h5,
     color: #000000;
     position: relative;
     text-transform: uppercase;
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    top: 1px;
+    left: 0px;
+}
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
       content: "";
       position: absolute;
