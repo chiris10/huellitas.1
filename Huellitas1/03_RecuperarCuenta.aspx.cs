@@ -26,9 +26,7 @@ namespace Huellitas1
             {
                 try
                 {
-                    string userforgot = txtusuario.Text;
-                    ValorGLobaL0LovidoContra.valorglobal= userforgot;
-                    Random rand = new Random();
+                  
 
 
                     string user = txtusuario.Text;
