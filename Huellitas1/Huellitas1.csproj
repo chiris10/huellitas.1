@@ -1965,7 +1965,7 @@
     </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.6.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValorGLobaL0LovidoContra.cs" />
+    <Compile Include="ValorGlobalOlvidoContra.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\nucleo.eot" />
