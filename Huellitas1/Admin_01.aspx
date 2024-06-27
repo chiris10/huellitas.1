@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="1admin.aspx.cs" Inherits="Huellitas1._1admin" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Admin_01.aspx.cs" Inherits="Huellitas1._1admin" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,8 +6,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Argon Dashboard - Free Dashboard for Bootstrap 4 by Creative Tim
-  </title>
+    <title>Huellitas-Admin
+    </title>
     <!-- Favicon -->
     <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
@@ -28,7 +28,7 @@
             </button>
             <!-- Brand -->
             <a class="navbar-brand pt-0" href="./Index.aspx">
-                   <img src="1/pata1.png" />
+                <img src="1/pata1.png" />
             </a>
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -64,25 +64,25 @@
                     <li class="nav-item  active ">
                         <a class="nav-link  active " href="./index.html">
                             <i class="ni ni-tv-2 text-primary"></i>Dashboard
-            </a>
-                    </li>
-                                        <li class="nav-item">
-                        <a class="nav-link " href="AgregarImagen.aspx">
-                            <i class="ni ni-planet text-blue"></i>Agregar Imagenes
-            </a>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="./examples/profile.html">
-                            <i class="ni ni-single-02 text-yellow"></i>Users
-            </a>
+                        <a class="nav-link " href="AgregarImagen.aspx">
+                            <i class="ni ni-planet text-blue"></i>Add Images
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                       <%-- <a class="nav-link " href="SuperAdmin_AdminAdd_02.aspx">
+                            <i class="ni ni-single-02 text-yellow"></i>Add Admin
+                        </a>--%>
                     </li>
                 </ul>
 
                 <!-- Divider -->
                 <hr class="my-3">
             </div>
-                <div class=" bg-white bottom">
-    </div>
+            <div class=" bg-white bottom">
+            </div>
         </div>
     </nav>
     <div class="main-content">
@@ -323,58 +323,58 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">/argon/
-                    </th>
+                                        </th>
                                         <td>4,569
-                    </td>
+                                        </td>
                                         <td>340
-                    </td>
+                                        </td>
                                         <td>
                                             <i class="fas fa-arrow-up text-success mr-3"></i>46,53%
-                    </td>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">/argon/index.html
-                    </th>
+                                        </th>
                                         <td>3,985
-                    </td>
+                                        </td>
                                         <td>319
-                    </td>
+                                        </td>
                                         <td>
                                             <i class="fas fa-arrow-down text-warning mr-3"></i>46,53%
-                    </td>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">/argon/charts.html
-                    </th>
+                                        </th>
                                         <td>3,513
-                    </td>
+                                        </td>
                                         <td>294
-                    </td>
+                                        </td>
                                         <td>
                                             <i class="fas fa-arrow-down text-warning mr-3"></i>36,49%
-                    </td>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">/argon/tables.html
-                    </th>
+                                        </th>
                                         <td>2,050
-                    </td>
+                                        </td>
                                         <td>147
-                    </td>
+                                        </td>
                                         <td>
                                             <i class="fas fa-arrow-up text-success mr-3"></i>50,87%
-                    </td>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">/argon/profile.html
-                    </th>
+                                        </th>
                                         <td>1,795
-                    </td>
+                                        </td>
                                         <td>190
-                    </td>
+                                        </td>
                                         <td>
                                             <i class="fas fa-arrow-down text-danger mr-3"></i>46,53%
-                    </td>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -406,9 +406,9 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">Facebook
-                    </th>
+                                        </th>
                                         <td>1,480
-                    </td>
+                                        </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <span class="mr-2">60%</span>
@@ -422,9 +422,9 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Facebook
-                    </th>
+                                        </th>
                                         <td>5,480
-                    </td>
+                                        </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <span class="mr-2">70%</span>
@@ -438,9 +438,9 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Google
-                    </th>
+                                        </th>
                                         <td>4,807
-                    </td>
+                                        </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <span class="mr-2">80%</span>
@@ -454,9 +454,9 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">Instagram
-                    </th>
+                                        </th>
                                         <td>3,678
-                    </td>
+                                        </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <span class="mr-2">75%</span>
@@ -470,9 +470,9 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">twitter
-                    </th>
+                                        </th>
                                         <td>2,645
-                    </td>
+                                        </td>
                                         <td>
                                             <div class="d-flex align-items-center">
                                                 <span class="mr-2">30%</span>
