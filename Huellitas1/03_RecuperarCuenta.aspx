@@ -113,7 +113,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                         </div>
-                                        <asp:TextBox ID="txtusuario" runat="server" placeholder="User or email" class="form-control" minlength="3" MaxLength="200" Width="310px"></asp:TextBox>
+                                        <asp:TextBox ID="txtusuario" runat="server" placeholder="User or email" class="form-control" minlength="3" MaxLength="200" Width="310px" ></asp:TextBox>
                                     </div>
                                 </div>
 
