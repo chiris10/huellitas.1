@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Pet Sitting - Free Bootstrap 4 Template by Colorlib</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -126,7 +126,7 @@
         </div>
       </div>
     </section>
-           <section>
+         
   
         
                  
@@ -169,11 +169,10 @@
 			background-color: #3e8e41;
 		}
 	</style>
-</head>
-<body>
+
 	<div class="form-container">
 		<h2>Registro de Animales</h2>
-		<form>
+		
 			<div class="form-label">
 				<label for="nombre">Nombre:</label>
 				<input type="text" id="nombre" class="form-input" onkeypress="return validar(event)"/>
@@ -195,11 +194,11 @@
 				<textarea id="comentario" class="form-input" /></textarea>
 			</div>
 			<button class="form-button" type="submit">Registrar</button>
-		</form>
+		
 	</div>
 
 
-	</section>
+	
 
      <footer class="footer">
 	<div class="container">
