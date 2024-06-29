@@ -26,7 +26,7 @@ namespace Huellitas1
                 try
                 {
                    
-
+                    
 
                     string user = txtusuario.Text;
                     MySqlConnection conexion = new MySqlConnection("Server=127.0.0.1; database=ptc; Uid=root; pwd=Info2024/*-;");
@@ -117,10 +117,7 @@ namespace Huellitas1
             cryptoStream.Close();
             return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
         }
-        protected void btnregistro_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Index.aspx");
-        }
+        
 
 
 
