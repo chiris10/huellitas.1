@@ -27,20 +27,6 @@ namespace Huellitas1
                 try
                 {
 
-                    string userforgot = txtusuario.Text;
-                    ValorGlobalOlvidoContra.valorGlobal = userforgot;
-
-                    Random rand = new Random();
-                    string randomCode = (rand.Next(999999)).ToString();
-                    string eventorandom = randomCode + "reset_randomcode";
-                    MySqlConnection conexion2 = new MySqlConnection("server=127.0.0.1; database=ptc; Uid=root; pwd=Info2024/*-;");
-                    conexion2.Open();
-
-                    MySqlCommand comando = new MySqlCommand(string.Format("UPDATE usuarios SET Token = ' {0} ' WHERE Nombre_Usuario = ' {1} ' ", randomCode, txtusuario.Text), conexion2);
-                    MySqlCommand evento = new MySqlCommand("CREATE EVENT " + randomCode + " ON SCHEDULE AT CURRENT_TIMESTAMP + INTERVAL 2 MINUTE SO UPDATE usuarios SET Token = NULL ", conexion2 );
-                    comando.BeginExecuteNonQuery();
-                    evento.BeginExecuteNonQuery();
-                    conexion2.Close();
 
 
                     string user = txtusuario.Text;
@@ -73,7 +59,7 @@ namespace Huellitas1
                     const string fromPassword = "ggggciozoagnyxxn";
                     var toAddress = new MailAddress(correo, nombre);//Dirección de correo y nombre que se muestra				
                     const string subject = "Recuperar contraseña";//Asunto del correo
-                    string body = "Estimado " + nombrecliente + ", gracias por preferirnos y confiar en nosotros. Es un placer para nosotros que sea nuestro cliente, y no queremos que sufra inconvenientes. En el presente correo le enviamos la contraseña que solicitó. Muchas gracias por ser nuestro cliente. Contraseña: " + randomCode + "";
+                    string body = "Estimado " + nombrecliente + ", gracias por preferirnos y confiar en nosotros. Es un placer para nosotros que sea nuestro cliente, y no queremos que sufra inconvenientes. En el presente correo le enviamos la contraseña que solicitó. Muchas gracias por ser nuestro cliente. Contraseña: " + contraDesencriptada + "";
                     //Fin de datos del envío
 
 
